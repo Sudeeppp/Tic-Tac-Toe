@@ -36,8 +36,6 @@ body {
     background-color: #ffffc7;
     font-size: 8vh;
     color: #b0413e;
-
-
 }
 
 #msg {
@@ -74,4 +72,81 @@ body {
 
 .hide {
     display: none;
+}
+
+/* Responsive Design */
+
+/* For tablets and medium-sized devices */
+@media (max-width: 768px) {
+    .game {
+        height: 80vw;
+        width: 80vw;
+        gap: 1vw;
+    }
+
+    .box {
+        height: 22vw;
+        width: 22vw;
+        font-size: 6vw;
+    }
+
+    #msg {
+        font-size: 4vw;
+    }
+
+    #new-btn,
+    .reset {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+/* For smartphones and smaller devices */
+@media (max-width: 480px) {
+    .game {
+        height: 90vw;
+        width: 90vw;
+        gap: 2vw;
+    }
+
+    .box {
+        height: 26vw;
+        width: 26vw;
+        font-size: 5vw;
+    }
+
+    #msg {
+        font-size: 3.5vw;
+    }
+
+    #new-btn,
+    .reset {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+/* For larger screens (desktops and laptops) */
+@media (min-width: 1024px) {
+    .game {
+        height: 50vh;
+        width: 50vh;
+        gap: 1vh;
+    }
+
+    .box {
+        height: 15vh;
+        width: 15vh;
+        font-size: 7vh;
+    }
+
+    #msg {
+        font-size: 4vh;
+    }
+
+    #new-btn,
+    .reset {
+        font-size: 1.5rem;
+        padding: 1.25rem;
+    }
 }
